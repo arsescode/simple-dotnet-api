@@ -1,0 +1,46 @@
+@DotnetAPI_HostAddress = http://localhost:5158
+
+GET {{DotnetAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{DotnetAPI_HostAddress}}/pizza/
+Accept: application/json
+
+###
+
+GET {{DotnetAPI_HostAddress}}/pizza/1
+Accept: application/json
+
+###
+
+GET {{DotnetAPI_HostAddress}}/pizza/3
+Accept: application/json
+
+###
+
+POST {{DotnetAPI_HostAddress}}/pizza/
+Content-Type: application/json
+
+{
+    "name": "Hawaii",
+    "isGlutenFree": false
+}
+
+###
+
+PUT {{DotnetAPI_HostAddress}}/pizza/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Hawaiian",
+    "isGlutenFree": false
+}
+
+###
+
+DELETE {{DotnetAPI_HostAddress}}/pizza/3
+
+###
